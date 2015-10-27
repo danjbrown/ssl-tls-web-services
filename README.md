@@ -2,8 +2,6 @@
 
 In many cases using SSL/TLS is the most secure way to implement web service authentication: IP addresses can be forged and session based authentication potentially intercepted during the transfer. The information below assumes that you have already created and partly configured a new Apache SSL virtual host file, but explains how to generate and use a self-signed certificate in the context of this type of authentication.
 
-PHP classes for the cURL implementation will follow soon...
-
 ## Installation
 
 Firstly, follow these steps to generate the certificate and setup the Apache server
@@ -68,4 +66,9 @@ Using cURL, the request is made like this
 
 ## Code Example
 
-PHP classes to follow soon...
+$oSSLRequest = new SSLRequest();
+$oSSLRequest->url = "https://your-secure-url";
+$oResponse = $oSSLRequest->request();
+
+$data = $oResponse->data;
+$error = $oResponse->error;
