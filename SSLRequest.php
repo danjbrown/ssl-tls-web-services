@@ -31,9 +31,9 @@ class SSLRequest {
             CURLOPT_VERBOSE => true,
             CURLOPT_URL => $this->url,
             CURLOPT_SSLCERT => getcwd().$this->certificate,
-            CURLOPT_SSLCERTPASSWD => 'password',
+            CURLOPT_SSLCERTPASSWD => $this->certificatePassword,
             CURLOPT_SSLKEY => getcwd().$this->key,
-            CURLOPT_SSLKEYPASSWD => 'password',
+            CURLOPT_SSLKEYPASSWD => $this->keyPassword,
         );
  
         curl_setopt_array($ch , $options);
