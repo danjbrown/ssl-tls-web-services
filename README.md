@@ -22,7 +22,7 @@ SSLEngine on
 SSLCertificateFile /etc/apache2/ssl/apache.crt
 SSLCertificateKeyFile /etc/apache2/ssl/apache.key
 ```
-Next export the certificate and private key as a PKCS file to be used by the client
+Next export the certificate and private key as a PKCS #12 file to be used by the client
 ```
 openssl pkcs12 -export -clcerts -in apache.crt -inkey apache.key -out client.p12
 ```
