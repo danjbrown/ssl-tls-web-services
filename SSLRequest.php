@@ -1,6 +1,6 @@
 <?php
 
-class SSLRequest extends Zend_Db_Table_Abstract {
+class SSLRequest {
     
     // Configuration variables: certificates, keys, passwords, etc.
     private $userAgent = 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0)';
