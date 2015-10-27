@@ -44,7 +44,7 @@ openssl pkcs12 -in client.p12 -out client.key.pem -nocerts -nodes
 openssl pkcs12 -in client.p12 -out client.crt.pem -clcerts -nokeys
 ```
 
-3.Using cURL, the request could be made like this
+Using cURL, the request is made like this
 ```
   $url = "https://your-secure-url";
   $ch = curl_init();
