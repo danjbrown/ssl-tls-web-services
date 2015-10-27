@@ -66,9 +66,11 @@ Using cURL, the request is made like this
 
 ## Code Example
 
+```
 $oSSLRequest = new SSLRequest();
 $oSSLRequest->url = "https://your-secure-url";
 $oResponse = $oSSLRequest->request();
 
 $data = $oResponse->data;
 $error = $oResponse->error;
+```
