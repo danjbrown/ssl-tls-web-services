@@ -1,6 +1,6 @@
 ## SSL/TLS authentication for web services on a LAMP stack
 
-In many cases using SSL/TLS is the most secure way to implement web service authentication: IP addresses can be forged and session based authentication intercepted. The information below explains how to generate and use a self-signed certificate in the context of this type of authentication, assuminge that you have already created and partly configured a new Apache SSL virtual host file.
+In many cases using SSL/TLS is the most secure way to implement web service authentication: IP addresses can be forged and session based authentication intercepted. The information below explains how to generate and use a self-signed certificate in the context of this type of authentication, assuming that you have already created and partly configured a new Apache SSL virtual host file.
 
 ## Installation
 
